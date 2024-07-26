@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShioChev+</title>
+    </head>
+    <body>
+        <h1>ShioChev+</h1>
+        <p>Welcome to the ShioChev+ website!</p>
+        <a href="https://www.shiochev.com/">Visit ShioChev.com</a>
+        <p>This is a simple HTML page created using CSS Grid.</p>
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item">Item 3</div>
+          <div class="grid-item">Item 4</div>
+          <div class="grid-item">Item 5</div>
+          <div class="grid-item">Item 6</div>
+          <div class="grid-item">Item 7</div>
+          <div class="grid-item">Item 8</div>
+          <div class="grid-item">Item 9</div>
+          <div class="grid-item">Item 10</div>
+          <div class="grid-item">Item 11</div>
+          <div class="grid-item">Item 12</div>
+        </div>
+        <script src="script.js"></script>
+        <style>
+            /* CSS Grid */
+           .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+           }  
+           .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            }
+            /* Responsive */
+            @media screen and (max-width: 600px) {
+             .grid-container {
+                grid-template-columns: auto auto;
+              }
+            }
+            /* Dark Mode */
+            @media (prefers-color-scheme: dark) {
+              body {
+                background-color: #333;
+                color: #fff;
+              }
+              h1, p {
+                color: #ccc;
+              }
+             .grid-item {
+                background-color: rgba(255, 255, 255, 0.5);
+              }
+            }
+            /* Accessibility */
+            @media (prefers-reduced-motion: no-preference) {
+              body {
+                animation: none;
+              }
+            }
+            @keyframes fade-in {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            body {
+              animation: fade-in 1s;
+            }
+            /* Media Queries */
+            @media (min-width: 768px) {
+             .grid-container {
+                grid-template-columns: auto auto auto auto;
+              }
+            }
+            @media (min-width: 1024px) {
+             .grid-container {
+                grid-template-columns: auto auto auto auto auto;
+              }
+            }
+            /* Custom CSS */
+           .custom-class {
+            background-color: #f00;
+            }            
+        </style>
+    </body>
+    </html>
+</html>
